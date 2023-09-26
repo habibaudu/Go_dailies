@@ -24,7 +24,7 @@ func main() {
 			switch text{
 			case CmdHello:
 				numcommands +=1
-				fmt.Println("commmand response : hi")
+				fmt.Println("commmand Response : hi")
 
 			case CmdGoodbye:
 				numcommands +=1
