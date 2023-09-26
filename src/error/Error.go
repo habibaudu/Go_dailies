@@ -2,6 +2,7 @@ package timeparse
 
 import ("fmt"
         "strconv"
+		"strings"
 	    )
 
 type Time struct{
@@ -17,13 +18,13 @@ func (t *TimeParseError) Error() string{
 }
 
 func ParseTime(input string)(Time,error){
-	components := string.split(input,":")
+	components := strings.split(input,":")
 	if len(components) != 3{
 		return Time{},&TimeParseError{"Invalid Number of time components",input}
 	}else {
 		hour,err := strconv.Atoi(components[0])
 		if err != nil {
-			return Time{},&TimeParseError(fmt.Sprintf("Error Parsing hour %v",err),input)
+			return Time{},&TimeParseError(fmt.Sprintf("Error Parsing hour %v",err))
 		}
 
 		minute,err := strconv.Atoi(components[1])
