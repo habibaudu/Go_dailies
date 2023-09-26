@@ -28,7 +28,7 @@ func main() {
 
 			case CmdGoodbye:
 				numcommands +=1
-				fmt.Println("Command response  : bye")
+				fmt.Println("Command Response  : bye")
 			}
 			if text !="" {
 				numLines +=1
