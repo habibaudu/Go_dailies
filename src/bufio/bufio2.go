@@ -36,6 +36,6 @@ func main() {
 		}
 	}
 
-	fmt.Printf("You entered %v lines",numLines)
+	fmt.Printf("you entered %v lines",numLines)
 	fmt.Printf("You entered %v commands",numcommands)
 }
