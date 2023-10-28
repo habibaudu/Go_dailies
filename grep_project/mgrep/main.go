@@ -53,7 +53,7 @@ func main(){
 		wl.Finalize(numWorkers)
 	}()
 
-	for i:=0,i < numWorkers, i++{
+	for i:=0; i < numWorkers; i++{
 		workersWg.Add(1)
 
 		go func (){
