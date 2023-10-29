@@ -1,7 +1,7 @@
 package main
 
 import (
-	"io/fs"
+	//"io/fs"
 	"mgrep/worker"
 	"sync"
 	"fmt"
